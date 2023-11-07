@@ -1,0 +1,14 @@
+<div class="card" style=" margin-bottom: 20px;">
+    <div class="card-body">
+        {{#each thumbnail}}
+        <img src={{this}} width="150" height="150" class="card-img-top" style="object-fit: contain" alt="..." />
+        {{/each}}
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{description}}</p>
+        <p class="card-text">{{owner}}</p>
+        <p class="card-text">stock: {{stock}}</p>
+        <button data-productid="{{this._id}}" onclick="addToCart('{{this._id}}')" class="btn btn-outline-primary">Añadir</button>
+        <button data-productid="{{this._id}}" onclick="deleteToCart('{{this._id}}')" class="btn btn-outline-danger">Eliminar</button>
+        <a href="/product/{{_id}}" class="btn btn-outline-secondary">Info</a>
+    </div>
+</div>
