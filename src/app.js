@@ -71,9 +71,7 @@ app.use("/apidocs", swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
 
 plugin_Rutas(app, cors());
 
-const httpServer = app.listen(PORT, () => {
-  console.log(`Servidor corre en el puerto ${PORT}`);
-});
+const httpServer = app.listen(process.env.PORT || PORT )
 
 socket.connect(httpServer);
 connectToDatabase();
