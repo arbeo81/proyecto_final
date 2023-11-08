@@ -21,6 +21,8 @@ import swaggerUiExpress from "swagger-ui-express";
 
 export const app = express();
 
+const port = process.env.PORT || 5000;
+
 handlebar.registerHelper("sumTotalPrice", sumTotalPrice);
 handlebar.helpers.eq = function (a, b) {
   return a === b;
@@ -71,7 +73,9 @@ app.use("/apidocs", swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
 
 plugin_Rutas(app, cors());
 
-const httpServer = app.listen(process.env.PORT || PORT )
+const httpServer = app.listen(port, () => {
+  console.log(`Servidor corre en el puerto ${PORT}`);
+})
 
 socket.connect(httpServer);
 connectToDatabase();
