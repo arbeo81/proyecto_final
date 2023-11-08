@@ -533,3 +533,12 @@ info: GET en /logout - 8/11/2023
 info: GET en /login - 8/11/2023
 info: POST en /api/sessions/login - 8/11/2023
 info: GET en /products - 8/11/2023
+info: GET en /products - 8/11/2023
+info: GET en /login - 8/11/2023
+info: POST en /api/sessions/login - 8/11/2023
+info: GET en /products - 8/11/2023
+info: GET en /profile - 8/11/2023
+info: GET en /logout - 8/11/2023
+info: GET en /login - 8/11/2023
+info: POST en /api/sessions/login - 8/11/2023
+info: GET en /products - 8/11/2023

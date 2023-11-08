@@ -1,7 +1,7 @@
 import express from "express";
 import handlebars from "express-handlebars";
 import socket from "./socket.js";
-import { MONGODB, PORT, SESSION_SECRET } from "./config/config.js";
+import { MONGODB, SESSION_SECRET } from "./config/config.js";
 import { connectToDatabase } from "./database/database.js";
 import MongoStore from "connect-mongo";
 import morgan from "morgan";
@@ -74,7 +74,7 @@ app.use("/apidocs", swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
 plugin_Rutas(app, cors());
 
 const httpServer = app.listen(port, () => {
-  console.log(`Servidor corre en el puerto ${PORT}`);
+  console.log(`Servidor corre en el puerto ${port}`);
 })
 
 socket.connect(httpServer);
