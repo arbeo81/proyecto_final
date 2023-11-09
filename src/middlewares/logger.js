@@ -33,7 +33,7 @@ const developmentLogger = winston.createLogger({
     }),
   ],
 });
-/*
+
 const productionLogger = winston.createLogger({
   levels: customLevelOptions.levels,
   transports: [
@@ -43,7 +43,7 @@ const productionLogger = winston.createLogger({
       format: winston.format.simple(),
     }),
   ],
-});*/
+});
 
 export const addLogger = (req, res, next) => {
   if (NODE_ENV === "production") {
