@@ -542,3 +542,12 @@ info: GET en /logout - 8/11/2023
 info: GET en /login - 8/11/2023
 info: POST en /api/sessions/login - 8/11/2023
 info: GET en /products - 8/11/2023
+info: GET en /login - 8/11/2023
+info: POST en /api/sessions/login - 8/11/2023
+info: GET en /products - 8/11/2023
+info: POST en /api/carts/64c8191137a1f8bb429653ed/product/64bf3983e2acf4b1b442b998 - 8/11/2023
+info: DELETE en /api/products/64bf398de2acf4b1b442b999 - 8/11/2023
+info: GET en /products - 8/11/2023
+info: GET en /product/64bf398de2acf4b1b442b999 - 8/11/2023
+info: GET en /cart/64c8191137a1f8bb429653ed - 8/11/2023
+info: GET en /pago/64c8191137a1f8bb429653ed - 8/11/2023
